@@ -1,0 +1,12 @@
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .twitterButtons {
+     @apply  flex items-center w-14 h-14 ml-2 xl:ml-20 text-twitterWhite text-xl xl:h-auto xl:w-auto xl:px-4 xl:py-3 space-x-3 justify-center cursor-pointer 
+                hover:bg-twitterWhite hover:bg-opacity-10 rounded-full transition duration-300 ease-in-out xl:justify-start
+    }
+}

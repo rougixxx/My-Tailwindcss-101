@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <title>Dark Mode Tailwind</title>
+    <link rel="stylesheet" href="dist/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex justify-end dark:bg-gray-900">
+        <button class="px-4 py-2 " onclick="changeMode()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+              </svg>
+        </button>
+    </div>
+    <div class="flex justify-center items-center h-screen dark:bg-gray-900">
+        <button class="text-xl text-white bg-black px-6 py-2  dark:bg-green-900">Read More</button>
+    </div>
+    <script>
+        function changeMode() {
+           
+            const a = document.querySelector('html').className
+            document.querySelector('html').className =  a === 'dark' ? '' : 'dark'
+        }
+    </script>
+</body>
+</html>
